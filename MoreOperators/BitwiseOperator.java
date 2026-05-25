@@ -14,7 +14,7 @@ public class BitwiseOperator {
         // Bitwise XOR
         System.out.println("Bitwise XOR (a ^ b)  = " + (a ^ b));
 
-        // Bitwise Complement
+        // Bitwise Complement(tilte ~)
         System.out.println("Bitwise NOT (~a)     = " + (~a));
 
         // Left Shift
