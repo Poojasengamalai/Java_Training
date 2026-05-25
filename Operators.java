@@ -6,6 +6,5 @@ public class Operators {
         double x = a * b + c;
         System.out.println(x);
         
-
     }
 }
