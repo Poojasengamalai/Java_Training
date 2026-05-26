@@ -11,22 +11,18 @@ public class ConditionalStmt {
         // User Inputs
         System.out.println("Enter Student Name:");
         String name = sc.nextLine();
-
+        System.out.println(name);
         System.out.println("Enter Attendance Percentage:");
         int attendance = sc.nextInt();
-
         System.out.println("Enter Marks:");
         int marks = sc.nextInt();
-
         System.out.println("Enter CGPA:");
         double cgpa = sc.nextDouble();
-
         System.out.println("Enter Department Code:");
         System.out.println("1.CSE  2.ECE  3.EEE  4.MECH");
         int dept = sc.nextInt();
 
 
-        System.out.println(name);
         // 1. IF STATEMENT
         System.out.println("\n--- Attendance Status ---");
 
