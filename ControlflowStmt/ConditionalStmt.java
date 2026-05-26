@@ -26,7 +26,7 @@ public class ConditionalStmt {
         int dept = sc.nextInt();
 
 
-
+        System.out.println(name);
         // 1. IF STATEMENT
         System.out.println("\n--- Attendance Status ---");
 
