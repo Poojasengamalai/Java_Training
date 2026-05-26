@@ -30,7 +30,7 @@ public class SafeUnlock {
         // Final condition
         if(palindrome && evenSum)
         {
-            System.out.println("Safe Unlocked!!!");
+            System.out.println("Safer Unlocked!!!");
         }
         else
         {
