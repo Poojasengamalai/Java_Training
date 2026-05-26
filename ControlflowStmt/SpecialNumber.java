@@ -13,9 +13,9 @@ public class SpecialNumber {
             int product = 1;
             while(num > 0)
             {
-                int d = num % 10;
-                sum = sum + d;
-                product = product * d;
+                int digit = num % 10;
+                sum = sum + digit;
+                product = product * digit;
                 num = num / 10;
             }
             if(sum + product == i)
