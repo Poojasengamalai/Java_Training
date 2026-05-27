@@ -1,12 +1,12 @@
 package PatternConcept;
 
 import java.util.Scanner;
-public class StartPattern {
+public class StarPattern {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++){
+        int num = sc.nextInt();
+        for(int i=0;i<num;i++){
+            for(int j=0;j<num;j++){
                 System.out.print("* ");
             }
             System.out.println();
