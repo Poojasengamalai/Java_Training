@@ -7,12 +7,11 @@ public class Difference {
         int arr[] = new int[n];
         for(int i = 0; i<n; i++){
             arr[i] = sc.nextInt();
-            // System.out.print(arr[i]+" ");
         }
         int oddsum = 0;
         int evensum = 0;
         for(int i = 0; i<n; i++){
-            if(arr[i]%2==1){
+            if(arr[i]%2==1){ //this is for odd element sum and i%2==1 is for odd place element sum
                 oddsum+=arr[i];
             }else{
                 evensum+=arr[i];
@@ -20,8 +19,6 @@ public class Difference {
         }
         int diff = evensum-oddsum;
         System.out.println(diff);
-        
-        // System.out.print(Arrays.toString(diff));
         sc.close();
     }
 }
