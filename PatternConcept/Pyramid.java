@@ -14,12 +14,12 @@ public class Pyramid {
                     System.out.print("  ");
                 }
             }
-                for(int k=1;k<=i;k++){      //for mirror triangle at a time or else for reducing one column in the end then k<i
-                    System.out.print("* ");
-                }
-                System.out.println();
+            for(int k=1;k<=i;k++){      //for mirror triangle at a time or else for reducing one column in the end then k<i
+                System.out.print("* ");
             }
-            sc.close();
+            System.out.println();
+        }
+        sc.close();
         }
     }
 
