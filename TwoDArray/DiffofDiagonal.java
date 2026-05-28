@@ -25,7 +25,6 @@ public class DiffofDiagonal {
             diff = right-left;
             System.out.println(diff);
         }
-        System.out.println((left>right) ? left-right : right-left);
         sc.close();
     }
 }
