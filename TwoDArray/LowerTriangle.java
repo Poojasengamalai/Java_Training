@@ -8,7 +8,7 @@ public class LowerTriangle {
         int arr[][] = new int[n][n];
 
 
-        boolean check = true;
+        boolean chk = true;
 
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
@@ -19,12 +19,12 @@ public class LowerTriangle {
             for(int i=0;i<n;i++){
                 for(int j=0;j<i;j++){
                     if(i < j && arr[i][j] != 0){
-                        check = false;
+                        chk = false;
                         break;
                     }
                 }
             }
-        if(check){
+        if(chk){
             System.out.println("Lower Triangular Matrix");
         }
         else{
