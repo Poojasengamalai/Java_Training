@@ -1,6 +1,5 @@
 package ClassesObjects;
 
-
 class Car{
 
     // by using reference variable
