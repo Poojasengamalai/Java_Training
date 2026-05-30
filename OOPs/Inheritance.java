@@ -50,7 +50,7 @@ public class Inheritance {
         Readmi r = new Readmi();
         System.out.println("Heirachical Inheritance");
         r.communicate();
-        r.game();
         r.audio();
+        r.game();
     }    
 }
