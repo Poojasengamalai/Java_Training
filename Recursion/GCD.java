@@ -24,6 +24,5 @@ public class GCD {
         }
 
         System.out.println("\nGCD: "+gcd(a,b));
-        
     }
 }
