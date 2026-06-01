@@ -14,7 +14,7 @@ public class minunique {
         for(int i=0;i<n;i++){
             count[arr[i]-0]++;
         }
-        for(int i=0;i<n;i++){
+        for(int i=0;i<count.length;i++){
             if(count[i]==1){
                 System.out.println(i);
                 break;
