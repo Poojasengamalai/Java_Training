@@ -15,11 +15,11 @@ public class minunique {
             count[arr[i]-0]++;
         }
         for(int i=0;i<n;i++){
-        if(count[i]==1){
-            System.out.println(i);
-            break;
+            if(count[i]==1){
+                System.out.println(i);
+                break;
+            }
         }
-    }
     sc.close();
     }
 }
