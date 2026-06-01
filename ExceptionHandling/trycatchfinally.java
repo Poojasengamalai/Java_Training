@@ -13,6 +13,7 @@ public class trycatchfinally {
             System.out.println("Exception handled");
             System.out.println(e);
         }
+        // Multiple catch block can be used
 
         // catch(ArithmeticException e){
         //     System.out.println("Arithmetic Exception Handled");
