@@ -1,4 +1,4 @@
-package OOPs;
+package OOPs.Abstraction;
 
 abstract class Shapes{
     // abstract class with abstract method
@@ -50,7 +50,7 @@ class Laptop extends Music{
         System.out.println("Music Stops..");
     }
 }
-public class Abstraction {
+public class AbstractClassMethod {
     public static void main(String[] args) {
         MobilePhone m = new MobilePhone();
         m.play();
@@ -58,5 +58,7 @@ public class Abstraction {
         l.play();
         l.stop();
 
+        sketch s = new sketch();
+        s.square();
     }
 }
