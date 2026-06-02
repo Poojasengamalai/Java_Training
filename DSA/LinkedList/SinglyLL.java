@@ -80,7 +80,7 @@ class SLL{
             temp = temp.next;
         }
         temp = head;
-        for(int i=1;i<(count/2);i++){  // this is for insert at middle and (count/2)-1 for before the middle element
+        for(int i=1;i<(count/2);i++){  // this is for insert at middle for even number of elements only
             temp = temp.next;
         }
         newNode.next = temp.next;
@@ -119,7 +119,7 @@ public class SinglyLL {
 
         System.out.print("After Insertions: ");
         s1.display();
-        
+
         // Insert 55 at middle
         s1.insertAtMiddle(55);
         System.out.println("Insert at Middle: ");
