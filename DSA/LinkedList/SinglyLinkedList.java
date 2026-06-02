@@ -73,24 +73,40 @@ class SLL{
         Node newNode = new Node();
         newNode.data = val;
         newNode.next = null;
-        Node temp = head;
-        int count = 0;
-        while(temp!=null){
-            count++;
-            temp = temp.next;
+        if(head == null){
+            head = newNode;
+        }else{
+            Node slow = head;
+            Node fast = head;
+            Node prev = null;
+            while(fast != null && fast.next != null){   // this for middle and this is for after middle (fast.next != null && fast.next.next != null)
+                prev = slow;
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+            newNode.next = slow;
+            prev.next = newNode;
         }
-        temp = head;
-        for(int i=1;i<(count/2);i++){  // this is for insert at middle for even number of elements only
-            temp = temp.next;
-        }
-        newNode.next = temp.next;
-        temp.next = newNode;
+
+        // Node temp = head;
+        // int count = 0;
+        // while(temp!=null){
+        //     count++;
+        //     temp = temp.next;
+        // }
+        // temp = head;
+        // for(int i=1;i<(count/2);i++){  // this is for insert at middle for even number of elements only
+        //     temp = temp.next;
+        // }
+        // newNode.next = temp.next;
+        // temp.next = newNode;
+
         
     }
 
 }
 
-public class SinglyLL {
+public class SinglyLinkedList {
     public static void main(String[] args) {
         SLL s1 = new SLL();
 
@@ -98,6 +114,7 @@ public class SinglyLL {
         s1.insertAtEnd(100);
         s1.insertAtEnd(200);
         s1.insertAtEnd(50);
+        s1.insertAtEnd(75);
 
         System.out.println("Original List: ");
         s1.display();
