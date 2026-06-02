@@ -15,7 +15,7 @@ class SLL{
         head = null;
     }
 
-    
+
     void insertAtEnd(int val){    //insert at end or last
         Node newNode = new Node();
         newNode.data = val;
@@ -32,8 +32,14 @@ class SLL{
         }
     }
 
+    void insertAtBegin(int val){     //insert at begining or first
+        Node newNode = new Node();
+        newNode.data = val;
+        newNode.next = null;
 
-
+        newNode.next = head;
+        head = newNode;
+    }
 
 }
 
