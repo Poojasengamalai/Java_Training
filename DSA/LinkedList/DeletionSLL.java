@@ -43,7 +43,7 @@ class DeleteSLL{
                 prev = temp;
                 temp = temp.next;
             }
-            // prev.next = null;
+            prev.next = null;
         }
     }
 
