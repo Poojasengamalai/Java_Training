@@ -6,7 +6,7 @@ class Node{
     Node next;
 }
 
-// Singlly linked list
+// Singly linked list
 class SLL{
     Node head;
 
@@ -58,6 +58,29 @@ class SLL{
         }
     }
 
+    // boolean search(int target){
+    //     Node temp = head;
+    //     while(temp.data != target && temp != null){
+    //         temp = temp.next;
+    //     }
+    //     return temp != null;
+    // }
+
+    void search(int target){
+        Node temp = head;
+
+        while(temp != null && temp.data != target){
+            temp = temp.next;
+        }
+
+        if(temp != null){
+            System.out.println("Element Found");
+        }
+        else{
+            System.out.println("Element Not Found");
+        }
+    }
+
 
     void display(){
         Node temp = head;
@@ -69,7 +92,7 @@ class SLL{
         System.out.println();
     }
 
-    void insertAtMiddle(int val){  // insert at position
+    void insertAtMiddle(int val){  // insert at Middle
         Node newNode = new Node();
         newNode.data = val;
         newNode.next = null;
@@ -141,6 +164,16 @@ public class SinglyLinkedList {
         s1.insertAtMiddle(55);
         System.out.println("Insert at Middle: ");
         s1.display();
+
+        System.out.println("Searching");
+        s1.search(75);
+
+        // if(s1.search(75)){
+        //     System.out.println("Element Found");
+        // }
+        // else{
+        //     System.out.println("Element Not Found");
+        // }
     }
     
 }
