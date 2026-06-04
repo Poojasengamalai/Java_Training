@@ -76,7 +76,7 @@ public class Tree_BinarySearchTree {
         // bst.preorder(bst.root);
         // System.out.println();
         System.out.println("Post-Order");
-        bst.postorder(bst.root);
+        bst.inorder(bst.root);
         System.out.println();
     }
 }
