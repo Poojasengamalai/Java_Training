@@ -57,5 +57,26 @@ class BinarySearchTree{
 }
 
 public class Tree_BinarySearchTree {
-    
+    public static void main(String[] args) {
+        BinarySearchTree bst = new BinarySearchTree();
+
+        bst.root = bst.insert(50,bst.root);
+        bst.root = bst.insert(30,bst.root);
+        bst.root = bst.insert(72,bst.root);
+        bst.root = bst.insert(41,bst.root);
+        bst.root = bst.insert(20,bst.root);
+        bst.root = bst.insert(79,bst.root);
+        bst.root = bst.insert(65,bst.root);
+        bst.root = bst.insert(12,bst.root);
+        bst.root = bst.insert(38,bst.root);
+        bst.root = bst.insert(29,bst.root);
+        bst.root = bst.insert(17,bst.root);
+
+        // System.out.println("Pre-Order");
+        // bst.preorder(bst.root);
+        // System.out.println();
+        System.out.println("Post-Order");
+        bst.postorder(bst.root);
+        System.out.println();
+    }
 }
