@@ -10,9 +10,6 @@ public class Hashset {
         hs.add(20);
         hs.add(1);
         hs.add(5);
-        hs.add(98);
-        hs.add(23);
-        hs.add(77);
         System.out.println(hs);
 
         // hs.remove(20);
@@ -40,9 +37,12 @@ public class Hashset {
         s.add(5);
         s.add(77);
 
-        System.out.println("Before "+ hs);
         hs.retainAll(s);
+        System.out.println("Before "+ hs);
 
+        hs.add(98);
+        hs.add(23);
+        hs.add(77);
         hs.removeAll(s);
         System.out.println("After "+ hs);
     } 
