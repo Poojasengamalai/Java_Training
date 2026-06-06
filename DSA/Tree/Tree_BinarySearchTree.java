@@ -54,6 +54,17 @@ class BinarySearchTree{
         System.out.print(root.data+" ");
         inorder(root.right);
     }
+
+    int height(BSNode node){
+        if(node == null)
+            return -1;
+
+        int leftHeight = height(node.left);
+        int rightHeight = height(node.right);
+
+        return Math.max(leftHeight, rightHeight) + 1;
+        
+    }
 }
 
 public class Tree_BinarySearchTree {
